@@ -1,4 +1,5 @@
-![Screenshot of BetterFountain](https://i.imgur.com/mEAK9Xj.jpg)
+![Screenshot of BetterFountain in dark mode](https://i.imgur.com/x8vLDBf.jpg)
+![Screenshot of BetterFountain in light mode](https://i.imgur.com/GpkEdG8.jpg)
 
 # Better fountain
 
@@ -6,6 +7,7 @@ This is an extension for Visual Studio Code, written in a few hours, which allow
 
 [Install it here](https://marketplace.visualstudio.com/items?itemName=piersdeseilligny.betterfountain)
 
+[Support via PayPal](https://www.paypal.me/piersdeseilligny/)
 
 ## Features
 
@@ -15,6 +17,7 @@ This is an extension for Visual Studio Code, written in a few hours, which allow
 * "Folding" scenes
 * Live preview of the formatted screenplay
 * Exporting the screenplay to a PDF File
+* Custom font support (Add "Font:" at the top of your .fountain screenplay, with the other title page keys, followed by the name of a font installed on your system)
 * Approximation of a screenplay's duration (in the status bar)
 * Other cool stuff
     * Go straight to writing dialog after a parenthetical by pressing enter, while the cursor is still inside it
@@ -41,10 +44,7 @@ Here are some features I would like to add, but don't really have time to right 
 
 * Folding for sections
 
-* More and smarter auto-complete, for stuff like the times of day in scene headers, transitions, etc...
-
-* Buttons for zooming in and out of the screenplay preview (and also with [hammer.js](https://github.com/hammerjs/hammer.js
-)?)
+* Even smarter auto-complete
 
 * Some sort of system that would allow the storage of character information alongside the script
 
@@ -56,11 +56,13 @@ I will probably add these features when I have time, but if you're up for the ch
 
 * Syntax highlighting works thanks to a modified version of the .tmlanguage file by Jonathan Poritsky for [fountain-sublime-text](https://github.com/poritsky/fountain-sublime-text)
 
-* The live preview uses the [Fountain.js](https://github.com/mattdaly/Fountain.js) library by Matt Daly, covered by the [MIT License](https://github.com/mattdaly/Fountain.js/blob/master/LICENSE.md)
+* The live preview uses elements from the [Fountain.js](https://github.com/mattdaly/Fountain.js) library by Matt Daly, covered by the [MIT License](https://github.com/mattdaly/Fountain.js/blob/master/LICENSE.md)
 
-* The Export to PDF feature is provided by Piotr Jamróz's [Afterwriting CLI tool](https://github.com/ifrost/afterwriting-labs), also covered by the [MIT License](https://github.com/ifrost/afterwriting-labs)
+* The fountain parsing and PDF generation feature is based on Piotr Jamróz's [Afterwriting](https://github.com/ifrost/afterwriting-labs), also covered by the [MIT License](https://github.com/ifrost/afterwriting-labs)
 
 * The project was built using Microsoft's [language server example extension](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample) as a boilerplate.
+
+* The default font used in the preview and in the exported PDF is ["Courier Prime"](https://quoteunquoteapps.com/courierprime/), more specifically [a version](http://dimkanovikov.pro/courierprime/) which adds support for Azerbaijani, Belorussian, Kazakh, Russian, and Ukrainian
 
 ## Why visual studio code? I thought this was about screenwriting?
 

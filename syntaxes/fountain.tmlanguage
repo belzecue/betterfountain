@@ -168,7 +168,7 @@
          <key>contentName</key>
          <string>string</string>
          <key>begin</key>
-         <string>^\s*(([A-Z0-9 ]+(\([A-z0-9 '\-.()]+\))*|(@.*))(\s*\^)?$)</string>
+         <string>^\s*(([[:upper:]0-9- \.]+(\([A-z0-9 '\-.()]+\))*|(@.*))(\s*\^)?$)</string>
          <key>end</key>
          <string>^$</string>
          <key>beginCaptures</key>
@@ -262,7 +262,7 @@
       <key>scene_headings</key>
       <dict>
          <key>match</key>
-         <string>^\s*(\..*?|(?:INT|int|EXT|ext|EST|est|INT|int\./EXT|ext|INT|int/EXT|ext|I/E|i/e)(?:\.| ))(.*?)(?&lt;!  )(#[A-Za-z0-9\-.]+#)?$</string>
+         <string>(?i)^((?:\*{0,3}_?)?(?:(?:int|ext|est|int\.?\/ext|i\.?\/e\.?)[. ])(.+))|^(?:\.(?!\.+))(.+)</string>
          <key>captures</key>
          <dict>
             <key>1</key>
@@ -326,7 +326,7 @@
          <key>end</key>
          <string>\s*(=*)$\n?</string>
          <key>name</key>
-         <string>markup.synopsis.fountain</string>
+         <string>comment.block</string>
          <key>patterns</key>
          <array>
             <dict>
@@ -581,9 +581,9 @@
       <key>title_page</key>
       <dict>
          <key>begin</key>
-         <string>^(?i)(title|credit|authors?|source|draft date|contact|copyright|notes):</string>
+         <string>^(?i)(title|credit|authors?|source|draft date|date|watermark|contact|copyright|notes|font):</string>
          <key>end</key>
-         <string>^(?=(?i)(title|credit|authors?|source|draft date|contact|copyright|notes)|$)</string>
+         <string>^(?=(?i)(title|credit|authors?|source|draft date|date|watermark|contact|copyright|notes|font)|$)</string>
          <key>beginCaptures</key>
          <dict>
             <key>1</key>
